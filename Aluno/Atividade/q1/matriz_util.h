@@ -4,18 +4,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int **matrizA;
-int **matrizB;
-int **matrizResultante;
 
-int linhas;
-int colunas;
+struct tipo_Matriz
+{
+	int qtd_linhas;
+    int qtd_colunas;
+    int **dados;
+};
+ 
+typedef tipo_Matriz* Matriz;
 
+void imprime_matriz(Matriz);
 
-void imprime_matriz(int **matriz);
+Matriz inicializa_matriz(Matriz);
 
-void inicializa_matriz(int **matriz);
-
-void alocar_matriz (int **matriz,int i,int j);
+Matriz alocar_matriz (int i,int j);
 
 #endif
