@@ -1,4 +1,4 @@
-#include "matriz_util.h"
+#include "lib/matriz_util.h"
 
 void imprime_matriz(Matriz matriz){
 	int linhas_locais, colunas_locais;
@@ -24,7 +24,7 @@ Matriz inicializa_matriz(Matriz matriz){
 	for (i = 0; i < matriz->qtd_linhas; ++i)
 	{		
 		for(j=0;j< matriz->qtd_colunas;++j){
-			matriz->dados[i][j] = rand()%1000;
+			matriz->dados[i][j] = rand()%3;
 		}
 	}	
 	return matriz;
@@ -33,7 +33,7 @@ Matriz inicializa_matriz(Matriz matriz){
 Matriz alocar_matriz (int linhas_locais,int colunas_locais){  
   Matriz matriz = new tipo_Matriz;
 
-  matriz->qtd_colunas=colunas_locais;
+  matriz->qtd_colunas = colunas_locais;
   matriz->qtd_linhas = linhas_locais;
 
 
