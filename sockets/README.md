@@ -5,6 +5,7 @@ Manipulação de Matrizes/Vetores utilizando conceitos de Sockets.
 Compilar:
 
 ` gcc  soma_vetor_escravo.c -o escravo `
+
 ` gcc  soma_vetor_mestre.c -o mestre `
 
 ## Q1
@@ -15,9 +16,9 @@ Desenvolver 2 programas C sendo:
 
 Executar:
 
-` ./escravo 'p' | 'p' ∈ {Port}`
+` ./escravo 'p' `
 
-` ./mestre 'P' 'm' 'n' `
+` ./mestre 'p' 'm' 'n' `
 
-* 'P' o número inicial do intervalo de portas disponíveis que serão usadas pelos escravos ex: 5555
-* 'm' 'n' ∈ N > 0 | 'm' o tamanho do vetor a ser enviado e 'n' a quantidade de escravos criados o valor 'P'
+* 'p' o número inicial do intervalo de portas disponíveis que serão usadas pelos escravos ex: 5555
+* 'm' 'n' ∈ N > 0 | 'm' o tamanho do vetor a ser enviado e 'n' a quantidade de escravos criados o valor 'p'
