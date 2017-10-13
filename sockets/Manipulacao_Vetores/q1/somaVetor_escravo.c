@@ -54,13 +54,7 @@ int main(int argc, char *argv[]){
 		return 1;
 	}
 	printf("[PACOTE RECEBIDO]: NECESSIDADE DE ESCRAVOS = %d\n",len_portas);
-
-
-	//vetor = (int*) malloc(len_vetor * sizeof(int));
-	// for (i = 0; i < len_vetor; ++i)
-	// {
-	// 	vetor[i] = -1;
-	// }
+	
 
 	printf("RECEBENDO DADOS DO VETOR\n");
 	if(recvfrom(s, &vetor, sizeof(int)*len_vetor, 0, (struct sockaddr *) &mestre, &slen)==-1){
