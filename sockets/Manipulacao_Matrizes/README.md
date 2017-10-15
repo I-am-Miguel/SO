@@ -7,9 +7,9 @@ Dado duas matrizes quadradas de tamanho 3, deve-se criar 3 escravos para efetuar
 
 Compilar:
 
-` g++ -std=c++11 multiplicaMatriz_mestre.c matriz_util.c lib/<nome_dos_arquivos>.h -o mestre `
+` g++ -std=c++11 multiplicaMatriz_mestre.c matriz_util.c lib/*.h -o mestre `
 
-` g++ -std=c++11 multiplicaMatriz_escravo.c matriz_util.c lib/<nome_dos_arquivos>.h -o escravo `
+` g++ -std=c++11 multiplicaMatriz_escravo.c matriz_util.c lib/*.h -o escravo `
 
 
 Executar:
