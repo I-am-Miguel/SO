@@ -21,3 +21,17 @@ Executar:
 ` ./mestre 'p' `
 
 * 'p' o número inicial do intervalo de portas disponíveis que serão usadas pelos escravos ex: 5555
+
+## Q2
+Solução similar ao programa anterior, no entanto o mestre deve receber por argumentos o tamanho da matriz e consequentemente a quantidade de escravos ou seja
+
+Executar:
+
+` ./escravo 'p' `
+...
+` ./escravo 'p'+'(n-1)' `
+
+` ./mestre 'p' 'n'`
+
+* 'p' o número inicial do intervalo de portas disponíveis que serão usadas pelos escravos ex: 5555
+* 'n' o tamanho da matriz e quantiade de escravos a serem criados
